@@ -2,6 +2,9 @@ import * as cheerio from 'cheerio'
 import { writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
+import TEAMS from '../db/teams.json' assert { type: 'json' }
+const DB_PATH = path.join(process.cwd(), './db')
+
 const URLS = {
   leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/',
 }
@@ -55,6 +58,8 @@ async function getLeaderBoard() {
     },
   }
 
+  const getTeamFrom = ({ name }) => TEAMS.find(team => team.name === name)
+
   const cleanText = text =>
     text
       .replace(/\t|\n|\s:/g, '')
@@ -75,13 +80,22 @@ async function getLeaderBoard() {
         return [key, value]
       },
     )
+    const { team: teamName, ...leaderboardForTeam } =
+      Object.fromEntries(leaderBoardEntries)
+    const team = getTeamFrom({ name: teamName })
 
-    leaderboard.push(Object.fromEntries(leaderBoardEntries))
+    leaderboard.push({
+      ...leaderboardForTeam,
+      team,
+    })
   })
   return leaderboard
 }
 
 const leaderboard = await getLeaderBoard()
-const filePath = path.join(process.cwd(), './db/leaderboard.json')
 
-await writeFile(filePath, JSON.stringify(leaderboard, null, 2), 'utf-8')
+await writeFile(
+  `${DB_PATH}/leaderboard.json`,
+  JSON.stringify(leaderboard, null, 2),
+  'utf-8',
+)
