@@ -10,15 +10,7 @@ const URLS = {
 }
 
 async function scrape(url) {
-  const options = {
-    method: 'GET',
-    timeout: 5000,
-  }
-  const request = new Request(
-    `https://webcache.googleusercontent.com/search?q=cache:${url}`,
-    options,
-  )
-  const res = await fetch(request)
+  const res = await fetch(url)
   const html = await res.text()
   return cheerio.load(html)
 }
