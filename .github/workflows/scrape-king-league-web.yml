@@ -1,0 +1,30 @@
+name: Scrapper King League Infojobs
+
+on:
+  workflow_dispatch:
+  
+  repository_dispatch:
+    types:
+      - webhook
+  
+  schedule:
+    - cron: "0 */1 * * 0"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.20.0
+      - run:
+          node scrapping/leaderboard.js
+          git config user.name kings-league-bot
+          git config user.email bot@kingsleague.bjvalmaseda.com
+          git add -A
+          git commit -m "[bot] update Kings League database"
+          git push origin main
