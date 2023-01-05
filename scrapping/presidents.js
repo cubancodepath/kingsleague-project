@@ -18,14 +18,14 @@ const presidents = await Promise.all(
 
     const imageApiRequest = new Request(imageApiEndpoint, {
       timeout: 5000,
-      method: 'GET',
+      method: 'GET'
     })
 
     const responseImageEndpoint = await fetch(imageApiRequest)
     const data = await responseImageEndpoint.json()
     const [imageInfo] = data
     const {
-      guid: { rendered: imageUrl },
+      guid: { rendered: imageUrl }
     } = imageInfo
 
     const fileExtension = imageUrl.split('.').at(-1)
@@ -42,11 +42,11 @@ const presidents = await Promise.all(
 
     console.log(`> Everything is done! ${name}`)
     return { id, name, image: imageFileName, teamId: 0 }
-  }),
+  })
 )
 
 console.log('> All presidents are done!')
 await writeFile(
   `${DB_PATH}/presidents.json`,
-  JSON.stringify(presidents, null, 2),
+  JSON.stringify(presidents, null, 2)
 )

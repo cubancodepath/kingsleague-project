@@ -5,7 +5,7 @@ import TEAMS from '../db/teams.json' assert { type: 'json' }
 import PRESIDENTS from '../db/presidents.json' assert { type: 'json' }
 
 const URLS = {
-  leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/',
+  leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/'
 }
 
 async function scrape(url) {
@@ -21,42 +21,42 @@ async function getLeaderBoard() {
   const LEADERBOARD_SELECTORS = {
     team: {
       selector: '.fs-table-text_3',
-      typeOf: 'string',
+      typeOf: 'string'
     },
     wins: {
       selector: '.fs-table-text_4',
-      typeOf: 'number',
+      typeOf: 'number'
     },
     loses: {
       selector: '.fs-table-text_5',
-      typeOf: 'number',
+      typeOf: 'number'
     },
     scoredGoals: {
       selector: '.fs-table-text_6',
-      typeOf: 'number',
+      typeOf: 'number'
     },
     concededGoals: {
       selector: '.fs-table-text_7',
-      typeOf: 'number',
+      typeOf: 'number'
     },
     yellowCards: {
       selector: '.fs-table-text_8',
-      typeOf: 'number',
+      typeOf: 'number'
     },
     redCards: {
       selector: '.fs-table-text_9',
-      typeOf: 'number',
-    },
+      typeOf: 'number'
+    }
   }
 
   const getTeamFrom = ({ name }) => {
     const { presidentId, ...restOfTeam } = TEAMS.find(
-      team => team.name === name,
+      team => team.name === name
     )
     const president = PRESIDENTS.find(president => president.id === presidentId)
     return {
       ...restOfTeam,
-      president,
+      president
     }
   }
 
@@ -78,7 +78,7 @@ async function getLeaderBoard() {
         const value = typeOf === 'number' ? Number(cleanValue) : cleanValue
 
         return [key, value]
-      },
+      }
     )
     const { team: teamName, ...leaderboardForTeam } =
       Object.fromEntries(leaderBoardEntries)
@@ -86,7 +86,7 @@ async function getLeaderBoard() {
 
     leaderboard.push({
       ...leaderboardForTeam,
-      team,
+      team
     })
   })
   return leaderboard

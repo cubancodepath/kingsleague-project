@@ -7,6 +7,6 @@ export function writeDBFile(dbName, data) {
   return writeFile(
     `${DB_PATH}/${dbName}.json`,
     JSON.stringify(data, null, 2),
-    'utf-8',
+    'utf-8'
   )
 }
