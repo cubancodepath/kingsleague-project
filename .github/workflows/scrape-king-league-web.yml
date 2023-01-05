@@ -22,7 +22,7 @@ jobs:
         with:
           version: 7.20.0
           run_install: true
-      - run: 
+      - run: |
           node scrapping/leaderboard.js
           git config user.name kings-league-bot
           git config user.email bot@kingsleague.bjvalmaseda.com
