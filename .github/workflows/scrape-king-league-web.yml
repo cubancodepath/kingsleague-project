@@ -2,13 +2,13 @@ name: Scrapper King League Infojobs
 
 on:
   workflow_dispatch:
-  
+
   repository_dispatch:
     types:
       - webhook
-  
+
   schedule:
-    - cron: "0 */1 * * 0"
+    - cron: '0 */1 * * 0'
 
 jobs:
   build:
@@ -21,8 +21,8 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 7.20.0
-      - run:
-          node scrapping/leaderboard.js
+          run_install: true
+      - run: node scrapping/leaderboard.js
           git config user.name kings-league-bot
           git config user.email bot@kingsleague.bjvalmaseda.com
           git add -A
