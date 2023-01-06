@@ -27,7 +27,7 @@ async function getLeaderBoard() {
       selector: '.fs-table-text_4',
       typeOf: 'number'
     },
-    loses: {
+    losses: {
       selector: '.fs-table-text_5',
       typeOf: 'number'
     },
