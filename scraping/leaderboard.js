@@ -1,21 +1,8 @@
-import * as cheerio from 'cheerio'
-
-import { writeDBFile } from '../db/index.js'
 import TEAMS from '../db/teams.json' assert { type: 'json' }
 import PRESIDENTS from '../db/presidents.json' assert { type: 'json' }
+import { cleanText } from './utils.js'
 
-const URLS = {
-  leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/'
-}
-
-async function scrape(url) {
-  const res = await fetch(url)
-  const html = await res.text()
-  return cheerio.load(html)
-}
-
-async function getLeaderBoard() {
-  const $ = await scrape(URLS.leaderboard)
+export async function getLeaderboard($) {
   const $row = $('table tbody tr')
 
   const LEADERBOARD_SELECTORS = {
@@ -62,12 +49,6 @@ async function getLeaderBoard() {
     }
   }
 
-  const cleanText = (text) =>
-    text
-      .replace(/\t|\n|\s:/g, '')
-      .replace(/.*:/g, ' ')
-      .trim()
-
   const leaderBoardSelectorEntries = Object.entries(LEADERBOARD_SELECTORS)
 
   let leaderboard = []
@@ -93,7 +74,3 @@ async function getLeaderBoard() {
   })
   return leaderboard
 }
-
-const leaderboard = await getLeaderBoard()
-
-await writeDBFile('leaderboard', leaderboard)
