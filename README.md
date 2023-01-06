@@ -15,3 +15,5 @@ Available Endpoints:
 
 ## Web
 
+## Acknowledge
+This project is based in [@midudev](https://twitch.tv/midudev) twitch channels the main repo is https://github.com/midudev/kings-league-project
