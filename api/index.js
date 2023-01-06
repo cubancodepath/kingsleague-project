@@ -3,6 +3,8 @@ import { serveStatic } from 'hono/serve-static.module'
 import leaderboard from '../db/leaderboard.json'
 import presidents from '../db/presidents.json'
 import teams from '../db/teams.json'
+import topScorer from '../db/top_scorer.json'
+import mvp from '../db/mvp.json'
 
 const app = new Hono()
 
@@ -19,6 +21,14 @@ app.get('/', (ctx) =>
     {
       endpoint: '/presidents',
       description: 'Returns Kings League presidents '
+    },
+    {
+      endpoint: '/top-scorer',
+      description: 'Returns Kings League Top Scorer'
+    },
+    {
+      endpoint: '/mvp',
+      description: 'Returns Kings League MVPs '
     }
   ])
 )
@@ -42,6 +52,14 @@ app.get('/presidents/:id', (ctx) => {
 
 app.get('/teams', (ctx) => {
   return ctx.json(teams)
+})
+
+app.get('/top-scorer', (ctx) => {
+  return ctx.json(topScorer)
+})
+
+app.get('/mvp', (ctx) => {
+  return ctx.json(mvp)
 })
 
 app.get('/static/*', serveStatic({ root: './' }))
