@@ -7,7 +7,7 @@ const STATICS_PATH = path.join(process.cwd(), './assets/static/presidents')
 const DB_PATH = path.join(process.cwd(), './db')
 
 const presidents = await Promise.all(
-  RAW_PRESIDENTS.map(async presidentInfo => {
+  RAW_PRESIDENTS.map(async (presidentInfo) => {
     const { slug: id, title, _links: links } = presidentInfo
     const { rendered: name } = title
 
