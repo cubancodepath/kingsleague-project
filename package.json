@@ -11,6 +11,7 @@
     "dev": "astro dev",
     "preview": "astro preview",
     "publish:api": "wrangler publish api/index.js",
+    "scrape": "node --no-warnings scraping/index.js",
     "start": "astro dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +25,7 @@
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-astro": "0.21.1",
     "hono": "2.7.1",
+    "picocolors": "^1.0.0",
     "prettier": "2.8.1",
     "standard": "17.0.0",
     "tailwindcss": "^3.0.24",
