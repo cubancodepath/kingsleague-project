@@ -3,9 +3,26 @@ name: Deploy API
 on:
   push:
     branches:
-      - "main"
+      - 'main'
 
 jobs:
+  test:
+    runs-on: ubuntu-22.04
+    name: Testing
+    if: github.ref_name=='main'
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.20.0
+          run_install: true
+      - name: Execute Test
+        run: pnpm test:cov
+
   deploy:
     runs-on: ubuntu-22.04
     name: Deploy API to Cloudflare Workers
@@ -22,4 +39,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: api
-          
+          command: publish --env production
