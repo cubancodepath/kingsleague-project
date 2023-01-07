@@ -8,5 +8,5 @@ bucket= "./assets"
 [env.production]
 vars={ENVIRONMENT="production"}
 routes=[
-    {pattern="api.kingsleague.bjvalmaseda", custom_domain=true}
+    {pattern="api.kingsleague.bjvalmaseda.com", custom_domain=true}
 ] 
