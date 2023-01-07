@@ -4,6 +4,7 @@ import leaderboard from '../db/leaderboard.json'
 import presidents from '../db/presidents.json'
 import teams from '../db/teams.json'
 import topScorer from '../db/top_scorer.json'
+import topAssistant from '../db/top_assistant.json'
 import mvp from '../db/mvp.json'
 
 const app = new Hono()
@@ -23,8 +24,22 @@ app.get('/', (ctx) =>
       description: 'Returns Kings League presidents '
     },
     {
+      endpoint: '/presidents/:id',
+      description: 'Returns Kings League a president ',
+      params: {
+        id: {
+          type: 'string',
+          required: true
+        }
+      }
+    },
+    {
       endpoint: '/top-scorer',
       description: 'Returns Kings League Top Scorer'
+    },
+    {
+      endpoint: '/top-assistant',
+      description: 'Returns Kings League Top Assistant'
     },
     {
       endpoint: '/mvp',
@@ -56,6 +71,10 @@ app.get('/teams', (ctx) => {
 
 app.get('/top-scorer', (ctx) => {
   return ctx.json(topScorer)
+})
+
+app.get('/top-assistant', (ctx) => {
+  return ctx.json(topAssistant)
 })
 
 app.get('/mvp', (ctx) => {
