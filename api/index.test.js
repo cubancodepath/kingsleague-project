@@ -1,27 +1,35 @@
-import { unstable_dev } from 'wrangler'
+import { unstable_dev as unstableDev } from 'wrangler'
 import { describe, expect, it, beforeAll, afterAll } from 'vitest'
 
-describe('Worker', () => {
+const setup = async () => {
+  const worker = await unstableDev(
+    'api/index.js',
+    {},
+    { disableExperimentalWarning: true }
+  )
+  return worker
+}
+
+const teardown = async (worker) => {
+  await worker.stop()
+}
+
+describe('Testing /', () => {
   let worker
-
   beforeAll(async () => {
-    worker = await unstable_dev(
-      'src/index.js',
-      {},
-      { disableExperimentalWarning: true },
-    )
+    worker = await setup()
   })
-  s
-
   afterAll(async () => {
-    await worker.stop()
+    await teardown(worker)
   })
+  it('should have endpoint and description', async () => {
+    const res = await worker.fetch()
+    expect(res).toBeDefined()
 
-  it('should return Hello World', async () => {
-    const resp = await worker.fetch()
-    if (resp) {
-      const text = await resp.text()
-      expect(text).toMatchInlineSnapshot(`"Hello World!"`)
-    }
+    const apiRoutes = await res.json()
+    apiRoutes.forEach((endpoint) => {
+      expect(endpoint).toHaveProperty('endpoint')
+      expect(endpoint).toHaveProperty('description')
+    })
   })
 })
