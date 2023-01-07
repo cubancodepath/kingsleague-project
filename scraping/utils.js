@@ -19,7 +19,7 @@ export const SCRAPINGS = {
     url: 'https://kingsleague.pro/estadisticas/goles/',
     scraper: getTopScorer
   },
-  top_assists: {
+  top_assistant: {
     url: 'https://kingsleague.pro/estadisticas/asistencias/',
     scraper: getAssists
   }

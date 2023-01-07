@@ -1,5 +1,6 @@
 import path from 'node:path'
 import { writeFile } from 'node:fs/promises'
+import TEAMS from './teams.json' assert { type: 'json' }
 
 const DB_PATH = path.join(process.cwd(), './db')
 
