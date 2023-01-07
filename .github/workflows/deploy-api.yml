@@ -21,7 +21,7 @@ jobs:
           version: 7.20.0
           run_install: true
       - name: Execute Test
-        run: pnpm test:cov
+        run: npm run test:cov
 
   deploy:
     runs-on: ubuntu-22.04
