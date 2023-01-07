@@ -24,6 +24,7 @@ jobs:
         run: npm run test:cov
 
   deploy:
+    needs: test
     runs-on: ubuntu-22.04
     name: Deploy API to Cloudflare Workers
     steps:
