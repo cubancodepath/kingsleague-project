@@ -23,7 +23,7 @@ jobs:
           version: 7.20.0
           run_install: true
       - run: |
-          node run scraper
+          npm run scrape
           git config user.name kings-league-bot
           git config user.email bot@kingsleague.bjvalmaseda.com
           git add -A
