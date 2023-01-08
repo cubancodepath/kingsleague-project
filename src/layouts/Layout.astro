@@ -25,7 +25,14 @@ const { title } = Astro.props
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/archivo.woff') format('woff');
+    src: url('/fonts/archivo.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/archivo-semibold.woff2') format('woff2');
   }
 
   @font-face {
@@ -33,15 +40,7 @@ const { title } = Astro.props
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/archivo.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url('/fonts/archivo-semibold.woff') format('woff');
+    src: url('/fonts/archivo-black.woff2') format('woff2');
   }
 
   html,
