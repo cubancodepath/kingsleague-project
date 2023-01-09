@@ -1,19 +1,19 @@
 [
   {
-    "playerName": "R. Carbó",
-    "gamesPlayed": 2,
-    "goals": 3,
-    "rank": 1,
-    "team": "Saiyans FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg"
-  },
-  {
     "playerName": "Ubón",
     "gamesPlayed": 2,
     "goals": 3,
-    "rank": 2,
+    "rank": 1,
     "team": "El Barrio",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg"
+  },
+  {
+    "playerName": "R. Carbó",
+    "gamesPlayed": 2,
+    "goals": 3,
+    "rank": 2,
+    "team": "Saiyans FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg"
   },
   {
     "playerName": "S. Sánchez «Drago»",
@@ -112,7 +112,7 @@
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg"
   },
   {
-    "playerName": "Kilian",
+    "playerName": "Lao",
     "gamesPlayed": 2,
     "goals": 1,
     "rank": 15,
@@ -120,7 +120,7 @@
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
-    "playerName": "J. Blanco",
+    "playerName": "Kilian",
     "gamesPlayed": 2,
     "goals": 1,
     "rank": 16,
@@ -128,7 +128,7 @@
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
-    "playerName": "Lao",
+    "playerName": "J. Blanco",
     "gamesPlayed": 2,
     "goals": 1,
     "rank": 17,
@@ -336,15 +336,15 @@
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg"
   },
   {
-    "playerName": "J. Segovia",
+    "playerName": "Franky P.",
     "gamesPlayed": 2,
     "goals": 0,
     "rank": 43,
-    "team": "Porcinos FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
+    "team": "Rayo de Barcelona",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg"
   },
   {
-    "playerName": "David L.L.",
+    "playerName": "J. Segovia",
     "gamesPlayed": 2,
     "goals": 0,
     "rank": 44,
@@ -352,7 +352,7 @@
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
-    "playerName": "Toti",
+    "playerName": "David L.L.",
     "gamesPlayed": 2,
     "goals": 0,
     "rank": 45,
@@ -360,7 +360,7 @@
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
-    "playerName": "A.Ripol",
+    "playerName": "Toti",
     "gamesPlayed": 2,
     "goals": 0,
     "rank": 46,
@@ -368,10 +368,18 @@
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
+    "playerName": "A.Ripol",
+    "gamesPlayed": 2,
+    "goals": 0,
+    "rank": 47,
+    "team": "Porcinos FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
+  },
+  {
     "playerName": "Lil Pizza",
     "gamesPlayed": 1,
     "goals": 0,
-    "rank": 47,
+    "rank": 48,
     "team": "Porcinos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
@@ -379,7 +387,7 @@
     "playerName": "Sergi",
     "gamesPlayed": 0,
     "goals": 0,
-    "rank": 48,
+    "rank": 49,
     "team": "Porcinos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
@@ -387,16 +395,8 @@
     "playerName": "Chicharito",
     "gamesPlayed": 2,
     "goals": 0,
-    "rank": 49,
+    "rank": 50,
     "team": "Porcinos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
-  },
-  {
-    "playerName": "Briones",
-    "gamesPlayed": 2,
-    "goals": 0,
-    "rank": 50,
-    "team": "Saiyans FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg"
   }
 ]
