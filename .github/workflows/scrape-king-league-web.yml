@@ -22,7 +22,10 @@ jobs:
         with:
           version: 7.20.0
           run_install: true
-      - run: |
+      - name: 'Commit and push'
+        env:
+          GITHUB_TOKEN: ${{secrets.KL_GH_TOKEN}}
+        run: |
           npm run scrape
           git config user.name kings-league-bot
           git config user.email bot@kingsleague.bjvalmaseda.com
