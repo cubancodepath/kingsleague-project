@@ -42,6 +42,7 @@ jobs:
     needs: test
     runs-on: ubuntu-22.04
     name: Deploy API to Cloudflare Workers
+    if: github.repository_owner == 'bjvalmaseda-dev'
     environment: Production
     steps:
       - uses: actions/checkout@v3
