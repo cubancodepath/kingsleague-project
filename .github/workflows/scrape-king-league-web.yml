@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{secrets.KL_GH_TOKEN}}
+          token: ${{secrets.KL_GH_TOKENS}}
       - uses: actions/setup-node@v3
         with:
           node-version: 18
