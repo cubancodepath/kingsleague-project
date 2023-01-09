@@ -1,0 +1,40 @@
+---
+import Container from '@components/Container.astro'
+import SectionTitle from '@components/SectionTitle.astro'
+import Layout from '@layouts/Layout.astro'
+
+import { getAllTeams } from '@services/teams.js'
+const teams = await getAllTeams()
+---
+
+<Layout title='Equipos'>
+  <SectionTitle title='Equipos' />
+  <Container>
+    <div class='bg-white p-20 shadow-xl rounded -mt-10'>
+      <section class='grid grid-cols-3 gap-8'>
+        {
+          teams.map((team) => {
+            const { id, name, image } = team
+            return (
+              <article class='overflow-hidden rounded bg-blue-600 h-48 col-span-1'>
+                <a
+                  href={`/team/${id}`}
+                  class='group h-full flex items-center justify-center relative transition hover:scale-110'
+                  title={`Ver equipo ${name}`}
+                >
+                  <img
+                    src={image}
+                    alt={`Logo del equipo ${name}`}
+                    class='w-28 h-28 z-10 brightness-[100] group-hover:scale-110 group-hover:brightness-200 transition'
+                  />
+                  <h3 class='font-title text-3xl text-white z-10'>{name}</h3>
+                  <div class="absolute opacity-50 bg-[url('https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg')] bg-[size:150%] bg-center inset-0 z-0 group-hover:bg-[size:200%] transition" />
+                </a>
+              </article>
+            )
+          })
+        }
+      </section>
+    </div>
+  </Container>
+</Layout>

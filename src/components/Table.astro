@@ -3,7 +3,6 @@ const response = await fetch(
   'https://api.kingsleague.bjvalmaseda.com/leaderboard/'
 )
 const leaderboard = await response.json()
-console.log(leaderboard)
 ---
 
 <div class='relative overflow-x-auto shadow-md sm:rounded-lg'>
@@ -30,13 +29,16 @@ console.log(leaderboard)
                 {rank}
               </th>
               <td class='px-6 py-4 font-black '>
-                <a href={`/team/${id}`} class='flex gap-x-4 items-center'>
+                <a
+                  href={`/team/${id}`}
+                  class='flex gap-x-4 items-center hover:opacity-75'
+                >
                   <img src={image} alt={'Logo de ' + name} class='w-6 h-6' />
                   {name}
                 </a>
               </td>
-              <td class='px-6 py-4'> 1</td>
-              <td class='px-6 py-4'> 0</td>
+              <td class='px-6 py-4'> {wins}</td>
+              <td class='px-6 py-4'> {losses}</td>
             </tr>
           )
         })
