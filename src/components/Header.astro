@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro'
 import MenuIcon from './icons/Menu.astro'
+import SocialNetworks from './SocialNetworks.astro'
 
 const response = await fetch('https://api.kingsleague.bjvalmaseda.com/teams')
 const teams = await response.json()
@@ -90,7 +91,7 @@ const menu = [
       >
         <ul
           id='navbar'
-          class='md:relative text-2xl flex flex-col md:flex-row bg-gradient-to-b from-[#ff6900] via-[#ff6900] to-[#cd5500] md:from-transparent md:to-transparent min-h-screen md:min-h-min py-24 md:py-0 md:flex justify-center text-white gap-6 md:gap-x-4 font-semibold text-center text-md md:text-base md:justify-center [&>li>a]:opacity-80 [&>li>a:hover]:opacity-100 [&>li>a:hover]:underline'
+          class='md:relative text-2xl flex flex-col md:flex-row bg-gradient-to-b from-[#ff6900] via-[#ff6900] to-[#cd5500] md:from-transparent md:to-transparent min-h-screen md:min-h-min py-24 md:py-0 md:flex justify-center text-white gap-6 md:gap-x-4 font-semibold text-center text-md md:text-base md:justify-start [&>li>a]:opacity-80 [&>li>a:hover]:opacity-100 [&>li>a:hover]:underline'
         >
           {
             menu.map(({ name, href }) => (
@@ -111,6 +112,7 @@ const menu = [
           }
         </ul>
       </div>
+      <SocialNetworks theme='white' mobileHidden={true} />
     </nav>
   </div>
 </header>
