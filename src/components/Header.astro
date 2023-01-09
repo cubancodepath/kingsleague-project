@@ -1,5 +1,4 @@
 ---
-import { log } from 'astro/dist/core/logger/core'
 import Logo from './Logo.astro'
 
 const response = await fetch('https://api.kingsleague.bjvalmaseda.com/teams')
@@ -22,6 +21,7 @@ console.log(teams[0])
                   class='group-hover:drop-shadow-[0px_0px_8px_#fff] aspect-square w-12 drop drop-shadow-[0px_0px_4px_#fff]'
                   src={image}
                   alt={`Escudo del equipo ${name}`}
+                  title={name}
                 />
               </a>
             </li>
