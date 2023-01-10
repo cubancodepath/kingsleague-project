@@ -12,10 +12,30 @@ export async function getStaticPaths() {
     props: { ...team }
   }))
 }
+
+const { name, imageWhite, presidentId, choach, channel, players } = Astro.props
 ---
 
 <Layout>
   <Container>
+    <section class='flex items-center justify-between'>
+      <div class='flex items-center gap-x-12'>
+        <img src={imageWhite} alt={`Escudo del eqipo ${name}`} />
+        <h1 class='font-bold text-5xl text-white'></h1>
+      </div>
+    </section>
+    <section class='grid grid-cols-5 gap-2'>
+      {
+        players.map((player) => (
+          <article class='text-center font-title text-slate-900 bg-white rounded-sm p-5'>
+            <img
+              src={`https://api.kingsleague.bjvalmaseda.com/static/players/${player.image}`}
+            />
+            <h1>{player.name}</h1>
+          </article>
+        ))
+      }
+    </section>
     <TeamsSeclectorCards />
   </Container>
 </Layout>
