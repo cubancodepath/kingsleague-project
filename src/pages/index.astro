@@ -2,6 +2,7 @@
 import Container from '@components/Container.astro'
 import Sponsors from '@components/Sponsors.astro'
 import Table from '@components/Table.astro'
+import TeamsSeclectorCards from '@components/TeamsSeclectorCards.astro'
 import Layout from '@layouts/Layout.astro'
 ---
 
@@ -14,6 +15,10 @@ import Layout from '@layouts/Layout.astro'
             <Table />
           </div>
           <div class='col-span-4 lg:col-span-4 xl:col-span-5 mt-[20px] lg:mt-0'>
+            <div class='grid grid-cols-6 gap-y-10 gap-x-5 w-full'></div>
+            <div class='my-10'>
+              <TeamsSeclectorCards />
+            </div>
           </div>
         </div>
       </Container>
