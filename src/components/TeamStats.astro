@@ -13,7 +13,7 @@ const {
 } = await findLeaderboardByTeamId({ teamId })
 const stasts = [
   {
-    title: 'Clasificación',
+    title: 'Posición',
     value: rank
   },
   {
@@ -25,33 +25,33 @@ const stasts = [
     value: losses
   },
   {
-    title: 'Goles a favor',
+    title: 'A favor',
     value: scoredGoals
   },
   {
-    title: 'Goles en Contra',
+    title: 'En contra',
     value: concededGoals
   },
   {
-    title: 'Tarjetas Amarillas',
+    title: 'T. Amarillas',
     value: yellowCards
   },
   {
-    title: 'Tarjetas Rojas',
+    title: 'T. Rojas',
     value: redCards
   }
 ]
 ---
 
-<section class='bg-black p-4 rounded'>
+<section class='bg-black p-4 gap-x-4 rounded grid grid-cols-3'>
   {
     stasts.map(({ title, value }) => (
-      <>
+      <div class='cols-span-1 flex flex-col items-start justify-between'>
         <h4 class='text-yellow-400 uppercase font-bold font-title'>{title}</h4>
-        <strong class='text-4xl font-title text-white font-bold'>
+        <strong class='text-6xl font-title text-white font-bold'>
           {value}
         </strong>
-      </>
+      </div>
     ))
   }
 </section>
