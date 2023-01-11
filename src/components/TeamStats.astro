@@ -1,0 +1,57 @@
+---
+import { findLeaderboardByTeamId } from '@services/leaderboard'
+
+const { teamId } = Astro.props
+const {
+  rank,
+  wins,
+  losses,
+  concededGoals,
+  yellowCards,
+  redCards,
+  scoredGoals
+} = await findLeaderboardByTeamId({ teamId })
+const stasts = [
+  {
+    title: 'Clasificación',
+    value: rank
+  },
+  {
+    title: 'Victorias',
+    value: wins
+  },
+  {
+    title: 'Derrotas',
+    value: losses
+  },
+  {
+    title: 'Goles a favor',
+    value: scoredGoals
+  },
+  {
+    title: 'Goles en Contra',
+    value: concededGoals
+  },
+  {
+    title: 'Tarjetas Amarillas',
+    value: yellowCards
+  },
+  {
+    title: 'Tarjetas Rojas',
+    value: redCards
+  }
+]
+---
+
+<section class='bg-black p-4 rounded'>
+  {
+    stasts.map(({ title, value }) => (
+      <>
+        <h4 class='text-yellow-400 uppercase font-bold font-title'>{title}</h4>
+        <strong class='text-4xl font-title text-white font-bold'>
+          {value}
+        </strong>
+      </>
+    ))
+  }
+</section>
