@@ -92,9 +92,9 @@
   {
     "wins": 2,
     "losses": 0,
-    "scoredGoals": 8,
-    "concededGoals": 3,
-    "yellowCards": 1,
+    "scoredGoals": 7,
+    "concededGoals": 4,
+    "yellowCards": 0,
     "redCards": 0,
     "team": {
       "id": "1k",

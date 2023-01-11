@@ -6,6 +6,7 @@ import teams from '../db/teams.json'
 import topScorer from '../db/top_scorer.json'
 import topAssistant from '../db/top_assistant.json'
 import mvp from '../db/mvp.json'
+import playersTwelve from '../db/players_twelve.json'
 
 const app = new Hono()
 
@@ -78,6 +79,22 @@ app.get('/presidents/:id', (ctx) => {
 
 app.get('/teams', (ctx) => {
   return ctx.json(teams)
+})
+
+app.get('/teams/:id/player-12', (ctx) => {
+  const id = ctx.req.param('id')
+
+  const foundPlayerTwelve = playersTwelve.find(
+    (player) => player.team.id === id
+  )
+
+  return foundPlayerTwelve
+    ? ctx.json(foundPlayerTwelve)
+    : ctx.json({ error: 'Not Found' }, 404)
+})
+
+app.get('/player-12', (ctx) => {
+  return ctx.json(playersTwelve)
 })
 
 app.get('/top-scorer', (ctx) => {
