@@ -27,7 +27,6 @@ const {
 } = Astro.props
 
 const playerTwelve = await getPlayerTwelveFor({ teamId: id })
-console.log(playerTwelve)
 
 export async function getStaticPaths() {
   const teams = await getAllTeams()
