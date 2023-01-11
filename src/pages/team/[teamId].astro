@@ -1,8 +1,18 @@
 ---
 import Container from '@components/Container.astro'
 import TeamsSeclectorCards from '@components/TeamsSeclectorCards.astro'
+import TeamStats from '@components/TeamStats.astro'
 import Layout from '@layouts/Layout.astro'
+import { findPresidentById } from '@services/presidents'
 import { getAllTeams } from '@services/teams'
+
+const ICON_NETWORK_MAPPING = [
+  'instagram',
+  'tiktok',
+  'twitch',
+  'twitter',
+  'youtube'
+]
 
 export async function getStaticPaths() {
   const teams = await getAllTeams()
@@ -13,29 +23,119 @@ export async function getStaticPaths() {
   }))
 }
 
-const { name, imageWhite, presidentId, choach, channel, players } = Astro.props
+const {
+  id,
+  name,
+  imageWhite,
+  socialNetworks,
+  presidentId,
+  choach,
+  channel,
+  players,
+  color
+} = Astro.props
+
+const socialNetworksWithIcons = socialNetworks.map((href) => ({
+  href,
+  icon: ICON_NETWORK_MAPPING.find((key) => href.includes(key))
+}))
+
+const president = await findPresidentById(presidentId)
 ---
 
-<Layout>
-  <Container>
-    <section class='flex items-center justify-between'>
-      <div class='flex items-center gap-x-12'>
-        <img src={imageWhite} alt={`Escudo del eqipo ${name}`} />
-        <h1 class='font-bold text-5xl text-white'></h1>
-      </div>
-    </section>
-    <section class='grid grid-cols-5 gap-2'>
-      {
-        players.map((player) => (
-          <article class='text-center font-title text-slate-900 bg-white rounded-sm p-5'>
+<Layout title={name}>
+  <section class='bg-principal py-20'>
+    <Container>
+      <div
+        class='relative bg-gradient-to-tr from-gray-600 to-gray-900 shadow-xl p-20 rounded -mt-10 z-10 mb-40'
+        style={`--tw-gradient-to: ${color} `}
+      >
+        <section class='flex items-center justify-between pb-60'>
+          <div class='flex flex-col items-center'>
+            <div class='flex items-center gap-x-6'>
+              <img
+                class='w-28'
+                src={imageWhite}
+                alt={`Escudo del eqipo ${name}`}
+              />
+              <div class='flex flex-col gap-4'>
+                <h1 class='font-bold text-6xl font-title text-white'>{name}</h1>
+                <ul class='flex gap-x-4'>
+                  {
+                    socialNetworksWithIcons.map(({ href, icon }) => {
+                      return (
+                        <li>
+                          <a
+                            href={href}
+                            target='_blank'
+                            rel='noopener nonrefferer'
+                            class='block transition hover:scale-150'
+                          >
+                            <img
+                              src={`/logos/social/${icon}.svg`}
+                              alt='test'
+                              class='w-8 h-8'
+                            />
+                          </a>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+              </div>
+            </div>
+            <TeamStats teamId={id} />
+          </div>
+
+          <div class='absolute -top-20 right-0 text-center'>
             <img
-              src={`https://api.kingsleague.bjvalmaseda.com/static/players/${player.image}`}
+              class='w-96 h-auto aspect-[170/239]'
+              src={president.image}
+              alt={president.name}
             />
-            <h1>{player.name}</h1>
-          </article>
-        ))
-      }
-    </section>
-    <TeamsSeclectorCards />
-  </Container>
+            <strong class='text-white text-xl font-title font-bold block -mt-8'
+              >{president.name}</strong
+            >
+          </div>
+        </section>
+        <section>
+          <h2 class='text-5xl font-title text-white text-center mt-24'>
+            Jugadores
+          </h2>
+          <div class='grid grid-cols-4 gap-2'>
+            {
+              players.map((player) => (
+                <article class='text-center font-title text-slate-900  rounded-sm p-5 m-auto'>
+                  <img
+                    class='w-56  h-auto aspect-[170/239]'
+                    src={`https://api.kingsleague.bjvalmaseda.com/static/players/${player.image}`}
+                  />
+                  <h3 class='text-white font-title text-3xl pt-2'>
+                    {player.name}
+                  </h3>
+                  <h4 class='font-body uppercase rounded-full bg-black/50 text-principal py-1 font-semibold'>
+                    {player.role}
+                  </h4>
+                </article>
+              ))
+            }
+          </div>
+        </section>
+
+        <div
+          class='absolute opacity-10 bg-[size:100%] bg-center inset-0 -z-10 bg-no-repeat'
+          style={`background-image: url('${imageWhite}')`}
+        >
+        </div>
+      </div>
+    </Container>
+    <Container>
+      <div class='bg-white shadow-xl p-20 pt-10 -mt-10 z-10 mb-40'>
+        <h2 class='text-5xl font-title text-black text-center'>
+          Todos los equipos
+        </h2>
+        <TeamsSeclectorCards />
+      </div>
+    </Container>
+  </section>
 </Layout>
