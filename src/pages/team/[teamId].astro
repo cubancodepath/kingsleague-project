@@ -1,10 +1,11 @@
 ---
 import Container from '@components/Container.astro'
+import TeamPagePlayer from '@components/TeamPagePlayer.astro'
 import TeamsSeclectorCards from '@components/TeamsSeclectorCards.astro'
 import TeamStats from '@components/TeamStats.astro'
 import Layout from '@layouts/Layout.astro'
 import { findPresidentById } from '@services/presidents'
-import { getAllTeams, getPlayerTwelveFor } from '@services/teams'
+import { getAllTeams, getPlayersTwelveFor } from '@services/teams'
 
 const ICON_NETWORK_MAPPING = [
   'instagram',
@@ -14,19 +15,10 @@ const ICON_NETWORK_MAPPING = [
   'youtube'
 ]
 
-const {
-  id,
-  name,
-  imageWhite,
-  socialNetworks,
-  presidentId,
-  choach,
-  channel,
-  players,
-  color
-} = Astro.props
+const { id, name, imageWhite, socialNetworks, presidentId, players, color } =
+  Astro.props
 
-const playerTwelve = await getPlayerTwelveFor({ teamId: id })
+const playersTwelve = await getPlayersTwelveFor({ teamId: id })
 
 export async function getStaticPaths() {
   const teams = await getAllTeams()
@@ -100,29 +92,9 @@ const president = await findPresidentById(presidentId)
             >
           </div>
         </section>
-        <section>
-          <h2 class='text-5xl font-title text-white text-center mt-24'>
-            Jugadores
-          </h2>
-          <div class='grid grid-cols-4 gap-2'>
-            {
-              [playerTwelve, ...players].map((player) => (
-                <article class='text-center font-title text-slate-900  rounded-sm p-5 m-auto'>
-                  <img
-                    class='w-56  h-auto aspect-[170/239]'
-                    src={`https://api.kingsleague.bjvalmaseda.com/static/players/${player.image}`}
-                  />
-                  <h3 class='text-white font-title text-3xl pt-2'>
-                    {player.name}
-                  </h3>
-                  <h4 class='font-body uppercase rounded-full bg-black/50 text-principal py-1 font-semibold'>
-                    {player.role}
-                  </h4>
-                </article>
-              ))
-            }
-          </div>
-        </section>
+
+        <TeamPagePlayer players={players} title='Jugadores' />
+        <TeamPagePlayer players={playersTwelve} title='Jugador 12' />
 
         <div
           class='absolute opacity-10 bg-[size:100%] bg-center inset-0 -z-10 bg-no-repeat'

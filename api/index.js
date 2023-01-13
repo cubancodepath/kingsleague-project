@@ -86,16 +86,16 @@ app.get('/teams', (ctx) => {
   return ctx.json(teams)
 })
 
-app.get('/teams/:id/player-12', (ctx) => {
+app.get('/teams/:id/players-12', (ctx) => {
   const id = ctx.req.param('id')
 
-  const foundPlayerTwelve = playersTwelve.find(
+  const foundPlayerTwelve = playersTwelve.filter(
     (player) => player.team.id === id
   )
 
   return foundPlayerTwelve
     ? ctx.json(foundPlayerTwelve)
-    : ctx.json({ error: 'Not Found' }, 404)
+    : ctx.json({ error: `Players for team ${id} not found` }, 404)
 })
 
 app.get('/player-12', (ctx) => {

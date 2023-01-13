@@ -11,11 +11,11 @@ export const getAllTeams = async () => {
   }
 }
 
-export const getPlayerTwelveFor = async ({ teamId }) => {
+export const getPlayersTwelveFor = async ({ teamId }) => {
   try {
-    const response = await fetch(`${apiUrl}/teams/${teamId}/player-12`)
-    const player = await response.json()
-    return player
+    const response = await fetch(`${apiUrl}/teams/${teamId}/players-12`)
+    const players = await response.json()
+    return players
   } catch (e) {
     // send error to log services
     return []
