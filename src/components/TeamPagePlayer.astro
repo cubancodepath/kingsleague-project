@@ -12,7 +12,9 @@ const { players, title } = Astro.props
             class='w-56 h-auto m-auto aspect-[170/239]'
             src={`https://api.kingsleague.bjvalmaseda.com/static/players/${player.image}`}
           />
-          <h3 class='text-white font-title text-3xl pt-2'>{player.name}</h3>
+          <h3 class='text-white font-title text-3xl pt-2'>
+            {player.dorsalName}
+          </h3>
           <h4 class='font-body uppercase rounded-full bg-black/50 text-principal py-1 font-semibold'>
             {player.role}
           </h4>
