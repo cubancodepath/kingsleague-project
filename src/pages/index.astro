@@ -4,6 +4,7 @@ import Sponsors from '@components/Sponsors.astro'
 import Leaderboard from '@components/Leaderboard.astro'
 import TeamsSeclectorCards from '@components/TeamsSeclectorCards.astro'
 import Layout from '@layouts/Layout.astro'
+import PlayerPrizeCard from '@components/PlayerPrizeCard.astro'
 ---
 
 <Layout title='Kings League Infojobs'>
@@ -15,7 +16,29 @@ import Layout from '@layouts/Layout.astro'
             <Leaderboard format='small' />
           </div>
           <div class='col-span-4 lg:col-span-4 xl:col-span-5 mt-[20px] lg:mt-0'>
-            <div class='grid grid-cols-6 gap-y-10 gap-x-5 w-full'></div>
+            <div class='grid grid-cols-6 gap-y-10 gap-x-5 w-full'>
+              <div class='col-span-6'>
+                <PlayerPrizeCard
+                  teamId='ultimate-mostoles'
+                  title='MVP'
+                  subtitle='Jornada 1'
+                />
+              </div>
+              <div class='col-span-3'>
+                <PlayerPrizeCard
+                  teamId='saiyans-fc'
+                  title='3'
+                  subtitle='Goles'
+                />
+              </div>
+              <div class='col-span-3'>
+                <PlayerPrizeCard
+                  teamId='los-troncos-fc'
+                  title='5'
+                  subtitle='Asistencias'
+                />
+              </div>
+            </div>
             <div class='my-10'>
               <TeamsSeclectorCards />
             </div>
