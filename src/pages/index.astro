@@ -1,7 +1,7 @@
 ---
 import Container from '@components/Container.astro'
 import Sponsors from '@components/Sponsors.astro'
-import Table from '@components/Table.astro'
+import Leaderboard from '@components/Leaderboard.astro'
 import TeamsSeclectorCards from '@components/TeamsSeclectorCards.astro'
 import Layout from '@layouts/Layout.astro'
 ---
@@ -12,7 +12,7 @@ import Layout from '@layouts/Layout.astro'
       <Container>
         <div class='grid grid-cols-4 lg:grid-cols-8 gap-10 w-full px-4 md:px-8'>
           <div class='col-span-4 xl:col-span-3 flex flex-col gap-y-10'>
-            <Table />
+            <Leaderboard format='small' />
           </div>
           <div class='col-span-4 lg:col-span-4 xl:col-span-5 mt-[20px] lg:mt-0'>
             <div class='grid grid-cols-6 gap-y-10 gap-x-5 w-full'></div>
