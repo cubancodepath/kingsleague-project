@@ -12,38 +12,38 @@ const isSmall = format === 'small'
   <table class='w-full text-sm text-left text-black'>
     <thead class='font-black text-xs text-white uppercase bg-black'>
       <>
-        <th scope='col' class='px-6 py-3 text-center'> Pos.</th>
-        <th scope='col' class='px-6 py-3'> Equipo</th>
-        <th title='Victorias' scope='col' class='px-6 py-3 text-center'> V</th>
-        <th title='Derrotas' scope='col' class='px-6 py-3 text-center'> D</th>
+        <th scope='col' class='px-3 py-3 text-center w-5'> Pos.</th>
+        <th scope='col' class='px-3 py-3'> Equipo</th>
+        <th title='Victorias' scope='col' class='px-3 py-3 text-center'> V</th>
+        <th title='Derrotas' scope='col' class='px-3 py-3 text-center'> D</th>
         {
           !isSmall && (
             <>
               <th
                 title='Goles a favor'
                 scope='col'
-                class='px-6 py-3 text-center'
+                class='px-4 py-3 text-center'
               >
                 GF
               </th>
               <th
                 title='Goles en contra'
                 scope='col'
-                class='px-6 py-3 text-center'
+                class='px-4 py-3 text-center'
               >
                 GC
               </th>
               <th
                 title='Tarjetas Amarillas'
                 scope='col'
-                class='px-6 py-3 text-center'
+                class='px-4 py-3 text-center'
               >
                 TA
               </th>
               <th
                 title='Tarjetas Rojas'
                 scope='col'
-                class='px-6 py-3 text-center'
+                class='px-4 py-3 text-center'
               >
                 TR
               </th>
@@ -70,11 +70,11 @@ const isSmall = format === 'small'
             <tr class='odd:bg-white even:bg-slate-100 border-b hover:bg-slate-100'>
               <th
                 scope='row'
-                class='px-6 py-4 font-black text-black whitespace-nowrap text-center'
+                class='px-4 py-4 font-black text-black whitespace-nowrap text-center'
               >
                 {rank}
               </th>
-              <td class='px-6 py-4 font-black '>
+              <td class='px-4 py-4 font-black '>
                 <a
                   href={`/team/${id}`}
                   class='flex gap-x-4 items-center hover:opacity-75'
@@ -83,20 +83,20 @@ const isSmall = format === 'small'
                   {name}
                 </a>
               </td>
-              <td class='px-6 py-4 text-center'> {wins}</td>
-              <td class='px-6 py-4 text-center'> {losses}</td>
+              <td class='px-4 py-4 text-center'> {wins}</td>
+              <td class='px-4 py-4 text-center'> {losses}</td>
               {!isSmall && (
                 <>
-                  <td class='px-6 py-4 font-black text-center'>
+                  <td class='px-4 py-4 font-black text-center'>
                     {scoredGoals}
                   </td>
-                  <td class='px-6 py-4 font-black text-center'>
+                  <td class='px-4 py-4 font-black text-center'>
                     {concededGoals}
                   </td>
-                  <td class='px-6 py-4 font-black text-center'>
+                  <td class='px-4 py-4 font-black text-center'>
                     {yellowCards}
                   </td>
-                  <td class='px-6 py-4 font-black text-center'>{redCards}</td>
+                  <td class='px-4 py-4 font-black text-center'>{redCards}</td>
                 </>
               )}
             </tr>
