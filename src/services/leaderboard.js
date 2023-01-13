@@ -2,7 +2,7 @@ import { apiUrl } from './config.js'
 
 export const findLeaderboardByTeamId = async ({ teamId }) => {
   try {
-    const response = await fetch(`${apiUrl}/${teamId}`)
+    const response = await fetch(`${apiUrl}/leaderboard/${teamId}`)
     const teamStats = await response.json()
     return teamStats
   } catch (e) {
