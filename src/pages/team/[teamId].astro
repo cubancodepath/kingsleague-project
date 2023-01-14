@@ -15,7 +15,7 @@ const ICON_NETWORK_MAPPING = [
   'youtube'
 ]
 
-const { id, name, imageWhite, socialNetworks, presidentId, players, color } =
+const { id, name, imageWhite, socialNetworks, presidentId, players } =
   Astro.props
 
 const playersTwelve = await getPlayersTwelveFor({ teamId: id })
@@ -35,25 +35,31 @@ const socialNetworksWithIcons = socialNetworks.map((href) => ({
 }))
 
 const president = await findPresidentById(presidentId)
+const gradient = `bg-${id}`
 ---
 
 <Layout title={name}>
   <section class='bg-principal py-20'>
     <Container>
       <div
-        class='relative bg-gradient-to-tr from-gray-600 to-gray-900 shadow-xl p-20 rounded -mt-10 z-10 mb-40'
-        style={`--tw-gradient-to: ${color} `}
+        class={`relative py-10 px-2 md:px-20 md:py-10 shadow-xl sm:rounded -mt-10 z-10 mb-40 ${gradient}`}
       >
-        <section class='flex items-center justify-between pb-20'>
+        <section
+          class='relative flex flex-col xl:flex-row items-center justify-between pb-10'
+        >
           <div class='flex flex-col'>
-            <div class='flex items-center gap-x-6'>
+            <div class='flex flex-col xl:flex-row items-center gap-x-6 mb-2'>
               <img
                 class='w-28'
                 src={imageWhite}
                 alt={`Escudo del eqipo ${name}`}
               />
-              <div class='flex flex-col gap-4'>
-                <h1 class='font-bold text-6xl font-title text-white'>{name}</h1>
+              <div class='flex flex-col justify-end text-center gap-y-4'>
+                <h1
+                  class='font-title font-bold text-4xl md:text-6xl text-white'
+                >
+                  {name}
+                </h1>
                 <ul class='flex gap-x-4'>
                   {
                     socialNetworksWithIcons.map(({ href, icon }) => {
@@ -81,7 +87,7 @@ const president = await findPresidentById(presidentId)
             <TeamStats teamId={id} />
           </div>
 
-          <div class='absolute -top-20 right-0 text-center'>
+          <div class='absolute -top-24 right-0 text-center'>
             <img
               class='w-96 h-auto aspect-[170/239]'
               src={president.image}
