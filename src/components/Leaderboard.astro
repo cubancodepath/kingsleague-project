@@ -34,6 +34,13 @@ const isSmall = format === 'small'
                 GC
               </th>
               <th
+                title='Goles en contra'
+                scope='col'
+                class='px-4 py-3 text-center'
+              >
+                DG
+              </th>
+              <th
                 title='Tarjetas Amarillas'
                 scope='col'
                 class='px-4 py-3 text-center'
@@ -61,9 +68,10 @@ const isSmall = format === 'small'
             team,
             rank,
             scoredGoals,
+            concededGoals,
+            diferenceGoals = scoredGoals - concededGoals,
             yellowCards,
-            redCards,
-            concededGoals
+            redCards
           } = info
           const { image, name, id } = team
           return (
@@ -92,6 +100,9 @@ const isSmall = format === 'small'
                   </td>
                   <td class='px-4 py-4 font-black text-center'>
                     {concededGoals}
+                  </td>
+                  <td class='px-4 py-4 font-black text-center'>
+                    {diferenceGoals}
                   </td>
                   <td class='px-4 py-4 font-black text-center'>
                     {yellowCards}
