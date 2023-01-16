@@ -1,5 +1,4 @@
-import { readDBFile, T } from '../db/index.js'
-
+import { readDBFile, TEAMS } from '../db/index.js'
 
 const LIMIT_TOP = 5
 
@@ -9,7 +8,7 @@ const [leaderboardDB, mvpDB, topScorersDB, topAssistsDB] = await Promise.all([
   readDBFile('leaderboard'),
   readDBFile('mvp'),
   readDBFile('top_scorers'),
-  readDBFile('top_assists'),
+  readDBFile('top_assistant'),
   readDBFile('players_twelve')
 ])
 

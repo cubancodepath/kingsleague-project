@@ -1,13 +1,13 @@
-import path from 'node:path'
 import { writeFile, readFile } from 'node:fs/promises'
-
-export const TEAMS = await readDBFile('teams')
+import path from 'node:path'
 
 const DB_PATH = path.join(process.cwd(), './db')
 
 export function readDBFile(dbName) {
   return readFile(`${DB_PATH}/${dbName}.json`, 'utf-8').then(JSON.parse)
 }
+
+export const TEAMS = await readDBFile('teams')
 
 export function writeDBFile(dbName, data) {
   return writeFile(

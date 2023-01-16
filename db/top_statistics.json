@@ -1,0 +1,240 @@
+{
+  "leaderboard": [
+    {
+      "wins": 2,
+      "losses": 0,
+      "scoredGoals": 8,
+      "concededGoals": 3,
+      "yellowCards": 1,
+      "redCards": 0,
+      "rank": 1,
+      "team": {
+        "id": "ultimate-mostoles",
+        "name": "Ultimate Móstoles",
+        "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg",
+        "coach": "Nacho Castro",
+        "shortName": "ULT"
+      }
+    },
+    {
+      "wins": 2,
+      "losses": 0,
+      "scoredGoals": 7,
+      "concededGoals": 4,
+      "yellowCards": 0,
+      "redCards": 0,
+      "rank": 2,
+      "team": {
+        "id": "1k",
+        "name": "1K FC",
+        "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg",
+        "coach": "Julio García Mera",
+        "shortName": "1K"
+      }
+    },
+    {
+      "wins": 2,
+      "losses": 0,
+      "scoredGoals": 5,
+      "concededGoals": 3,
+      "yellowCards": 3,
+      "redCards": 0,
+      "rank": 3,
+      "team": {
+        "id": "saiyans-fc",
+        "name": "Saiyans FC",
+        "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg",
+        "coach": "Daniel Romo",
+        "shortName": "SAI"
+      }
+    },
+    {
+      "wins": 2,
+      "losses": 0,
+      "scoredGoals": 3,
+      "concededGoals": 1,
+      "yellowCards": 1,
+      "redCards": 0,
+      "rank": 4,
+      "team": {
+        "id": "kunisports",
+        "name": "Kunisports",
+        "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/kunisports.svg",
+        "coach": "Martín Posse",
+        "shortName": "KNS"
+      }
+    },
+    {
+      "wins": 1,
+      "losses": 1,
+      "scoredGoals": 7,
+      "concededGoals": 3,
+      "yellowCards": 1,
+      "redCards": 0,
+      "rank": 5,
+      "team": {
+        "id": "el-barrio",
+        "name": "El Barrio",
+        "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg",
+        "coach": "Juan Arroita",
+        "shortName": "RDB"
+      }
+    }
+  ],
+  "mvp": [
+    {
+      "playerName": "Lao",
+      "gamesPlayed": 2,
+      "mvps": 1,
+      "rank": 1,
+      "team": "Porcinos FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "porcinos-fc"
+    },
+    {
+      "playerName": "Ubón",
+      "gamesPlayed": 2,
+      "mvps": 1,
+      "rank": 2,
+      "team": "El Barrio",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "el-barrio"
+    },
+    {
+      "playerName": "Feliu",
+      "gamesPlayed": 2,
+      "mvps": 1,
+      "rank": 3,
+      "team": "Saiyans FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "saiyans-fc"
+    },
+    {
+      "playerName": "R. Carbó",
+      "gamesPlayed": 2,
+      "mvps": 1,
+      "rank": 4,
+      "team": "Saiyans FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "saiyans-fc"
+    },
+    {
+      "playerName": "Jacobo",
+      "gamesPlayed": 2,
+      "mvps": 1,
+      "rank": 5,
+      "team": "El Barrio",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "el-barrio"
+    }
+  ],
+  "topScorers": [
+    {
+      "playerName": "Ubón",
+      "gamesPlayed": 2,
+      "goals": 3,
+      "rank": 1,
+      "team": "El Barrio",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "el-barrio"
+    },
+    {
+      "playerName": "R. Carbó",
+      "gamesPlayed": 2,
+      "goals": 3,
+      "rank": 2,
+      "team": "Saiyans FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "saiyans-fc"
+    },
+    {
+      "playerName": "S. Sánchez «Drago»",
+      "gamesPlayed": 2,
+      "goals": 3,
+      "rank": 3,
+      "team": "Los Troncos FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "los-troncos-fc"
+    },
+    {
+      "playerName": "Pelaz",
+      "gamesPlayed": 2,
+      "goals": 3,
+      "rank": 4,
+      "team": "Rayo de Barcelona",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "rayo-barcelona"
+    },
+    {
+      "playerName": "Guillem ZZ",
+      "gamesPlayed": 2,
+      "goals": 3,
+      "rank": 5,
+      "team": "Rayo de Barcelona",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "rayo-barcelona"
+    }
+  ],
+  "topAssists": [
+    {
+      "playerName": "Franky P.",
+      "gamesPlayed": 2,
+      "assists": 2,
+      "rank": 1,
+      "team": "Rayo de Barcelona",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "rayo-barcelona"
+    },
+    {
+      "playerName": "J. Verdú «Gingko»",
+      "gamesPlayed": 1,
+      "assists": 2,
+      "rank": 2,
+      "team": "Los Troncos FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "los-troncos-fc"
+    },
+    {
+      "playerName": "A. Bueno",
+      "gamesPlayed": 2,
+      "assists": 2,
+      "rank": 3,
+      "team": "1K FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "1k"
+    },
+    {
+      "playerName": "Sergio G.",
+      "gamesPlayed": 1,
+      "assists": 2,
+      "rank": 4,
+      "team": "Ultimate Móstoles",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "ultimate-mostoles"
+    },
+    {
+      "playerName": "G. Cichero",
+      "gamesPlayed": 2,
+      "assists": 1,
+      "rank": 5,
+      "team": "Porcinos FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "porcinos-fc"
+    }
+  ]
+}

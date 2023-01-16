@@ -3,11 +3,12 @@ import { serveStatic } from 'hono/serve-static.module'
 import leaderboard from '../db/leaderboard.json'
 import presidents from '../db/presidents.json'
 import teams from '../db/teams.json'
-import topScorer from '../db/top_scorer.json'
+import topScorer from '../db/top_scorers.json'
 import topAssistant from '../db/top_assistant.json'
-import mvp from '../db/mvp.json'
+import mvps from '../db/mvp.json'
 import playersTwelve from '../db/players_twelve.json'
 import schedule from '../db/schedule.json'
+import topStatistics from '../db/top_statistics.json'
 
 const app = new Hono()
 
@@ -102,16 +103,20 @@ app.get('/player-12', (ctx) => {
   return ctx.json(playersTwelve)
 })
 
-app.get('/top-scorer', (ctx) => {
+app.get('/top-scorers', (ctx) => {
   return ctx.json(topScorer)
+})
+
+app.get('/top-statistics', (ctx) => {
+  return ctx.json(topStatistics)
 })
 
 app.get('/top-assistant', (ctx) => {
   return ctx.json(topAssistant)
 })
 
-app.get('/mvp', (ctx) => {
-  return ctx.json(mvp)
+app.get('/mvps', (ctx) => {
+  return ctx.json(mvps)
 })
 
 app.get('/schedule', (ctx) => {
