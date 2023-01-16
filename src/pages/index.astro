@@ -6,6 +6,7 @@ import TeamsSeclectorCards from '@components/TeamsSeclectorCards.astro'
 import Layout from '@layouts/Layout.astro'
 import PlayerPrizeCard from '@components/PlayerPrizeCard.astro'
 import { getFirstPlayersStatistics } from '@services/statistics'
+import NextMatchesTable from '@components/NextMatchesTable.astro'
 
 const { mvp, topScorer, topAssistant } = await getFirstPlayersStatistics()
 ---
@@ -16,6 +17,7 @@ const { mvp, topScorer, topAssistant } = await getFirstPlayersStatistics()
       <Container>
         <div class='grid grid-cols-4 lg:grid-cols-8 gap-10 w-full px-4 md:px-8'>
           <div class='col-span-4 xl:col-span-3 flex flex-col gap-y-10'>
+            <NextMatchesTable />
             <Leaderboard format='small' />
           </div>
           <div class='col-span-4 lg:col-span-4 xl:col-span-5 mt-[20px] lg:mt-0'>
