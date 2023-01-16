@@ -3,8 +3,8 @@ import { apiUrl } from './config.js'
 export const getTopScorers = async () => {
   try {
     const response = await fetch(`${apiUrl}/top-scorers`)
-    const topScores = await response.json()
-    return topScores
+    const topScorers = await response.json()
+    return topScorers
   } catch (e) {
     // send error to log services
     return null
@@ -20,6 +20,7 @@ export const getTopAssistant = async () => {
     return null
   }
 }
+
 export const getMVPs = async () => {
   try {
     const response = await fetch(`${apiUrl}/mpvs`)
@@ -39,5 +40,22 @@ export const getTopStatistics = async () => {
   } catch (e) {
     // send error to log services
     return null
+  }
+}
+
+export const getFirstPlayersStatistics = async () => {
+  const topStatistics = await getTopStatistics()
+
+  if (!topStatistics) return null
+
+  const { mvp, topScorers, topAssistant } = topStatistics
+  const [firstMVP] = mvp
+  const [firstTopScorer] = topScorers
+  const [firstTopAssistant] = topAssistant
+
+  return {
+    mvp: firstMVP,
+    topScorer: firstTopScorer,
+    topAssistant: firstTopAssistant
   }
 }

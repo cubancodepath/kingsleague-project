@@ -5,6 +5,9 @@ import Leaderboard from '@components/Leaderboard.astro'
 import TeamsSeclectorCards from '@components/TeamsSeclectorCards.astro'
 import Layout from '@layouts/Layout.astro'
 import PlayerPrizeCard from '@components/PlayerPrizeCard.astro'
+import { getFirstPlayersStatistics } from '@services/statistics'
+
+const { mvp, topScorer, topAssistant } = await getFirstPlayersStatistics()
 ---
 
 <Layout title='Kings League Infojobs'>
@@ -18,25 +21,49 @@ import PlayerPrizeCard from '@components/PlayerPrizeCard.astro'
           <div class='col-span-4 lg:col-span-4 xl:col-span-5 mt-[20px] lg:mt-0'>
             <div class='grid grid-cols-6 gap-y-10 gap-x-5 w-full'>
               <div class='col-span-6'>
-                <PlayerPrizeCard
-                  teamId='ultimate-mostoles'
-                  title='MVP'
-                  subtitle='Jornada 1'
-                />
+                {
+                  mvp && (
+                    <PlayerPrizeCard
+                      teamId={mvp.teamId}
+                      teamName={mvp.team}
+                      teamImage={mvp.image}
+                      playerName={mvp.playerName}
+                      playerImage={mvp.playerImage}
+                      title='MVP'
+                      subtitle='Jornada 1'
+                    />
+                  )
+                }
               </div>
               <div class='col-span-3'>
-                <PlayerPrizeCard
-                  teamId='saiyans-fc'
-                  title='3'
-                  subtitle='Goles'
-                />
+                {
+                  topScorer && (
+                    <PlayerPrizeCard
+                      teamId={topScorer.teamId}
+                      teamName={topScorer.team}
+                      teamImage={topScorer.image}
+                      playerName={topScorer.playerName}
+                      playerImage={topScorer.playerImage}
+                      title={topScorer.goals}
+                      subtitle='Goles'
+                    />
+                  )
+                }
               </div>
               <div class='col-span-3'>
-                <PlayerPrizeCard
-                  teamId='los-troncos-fc'
-                  title='5'
-                  subtitle='Asistencias'
-                />
+                {
+                  topAssistant && (
+                    <PlayerPrizeCard
+                      teamId={topAssistant.teamId}
+                      teamName={topAssistant.team}
+                      teamImage={topAssistant.image}
+                      playerName={topAssistant.playerName}
+                      playerImage={topAssistant.playerImage}
+                      title={topAssistant.assists}
+                      subtitle='Goles'
+                    />
+                  )
+                }
               </div>
             </div>
             <div class='my-10'>

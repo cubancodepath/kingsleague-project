@@ -1,4 +1,6 @@
 ---
+import CardBackgroundTeam from './CardBackgroundTeam.astro'
+
 const {
   playerName,
   playerImage,
@@ -9,28 +11,34 @@ const {
   subtitle
 } = Astro.props
 const gradient = `bg-${teamId}`
+
+const whiteImage = teamImage?.replace('.svg', '-inverse.svg')
 ---
 
 <article class={`relative  rounded p-5 ${gradient}`}>
   <div class='flex flex-col justify-between gap-y-10'>
-    <hedader>
-      <h4 class='leading-none text-white font-title font-black text-6xl'>
+    <hedader class='relative z-40'>
+      <h4
+        class='text-white font-title font-black text-[40px] lg:text-[80px] leading-none'
+      >
         {title}
       </h4>
-      <h5 class='uppercase text-principal font-black font-title text-2xl'>
+      <h5
+        class='uuppercase text-orange-500 font-black font-title text-lg lg:text-3xl'
+      >
         {subtitle}
       </h5>
     </hedader>
 
-    <footer>
+    <footer class='relative z-40'>
       <strong class='text-white font-semibold text-xl'>{playerName}</strong>
       <p class='text-white opacity-80'>{teamName}</p>
     </footer>
   </div>
+  <CardBackgroundTeam image={whiteImage} />
   <img
-    src={teamImage}
-    alt={`Logo del equipo ${teamName}`}
-    class='w-20 h-20 z-10 group-hover:scale-110 group-hover:brightness-200 transition object-contain'
+    src={`https://api.kingsleague.bjvalmaseda.com/static/players/${playerImage}`}
+    class='absolute right-0 bottom-0 w-60'
+    alt={`Imagen de ${playerName}`}
   />
-  <img src={playerImage} class='absolute right-0 w-36' alt='' />
 </article>
