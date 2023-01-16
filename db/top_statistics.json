@@ -89,7 +89,7 @@
       "rank": 1,
       "team": "Porcinos FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "porcinos-fc-lao.webp",
       "teamId": "porcinos-fc"
     },
     {
@@ -99,7 +99,7 @@
       "rank": 2,
       "team": "El Barrio",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "el-barrio-ubn.webp",
       "teamId": "el-barrio"
     },
     {
@@ -109,7 +109,7 @@
       "rank": 3,
       "team": "Saiyans FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "saiyans-fc-feliu.webp",
       "teamId": "saiyans-fc"
     },
     {
@@ -119,7 +119,7 @@
       "rank": 4,
       "team": "Saiyans FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "saiyans-fc-r-carbo.webp",
       "teamId": "saiyans-fc"
     },
     {
@@ -129,7 +129,7 @@
       "rank": 5,
       "team": "El Barrio",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "el-barrio-jacobo.webp",
       "teamId": "el-barrio"
     }
   ],
@@ -141,7 +141,7 @@
       "rank": 1,
       "team": "El Barrio",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "el-barrio-ubn.webp",
       "teamId": "el-barrio"
     },
     {
@@ -151,7 +151,7 @@
       "rank": 2,
       "team": "Saiyans FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "saiyans-fc-r-carbo.webp",
       "teamId": "saiyans-fc"
     },
     {
@@ -161,7 +161,7 @@
       "rank": 3,
       "team": "Los Troncos FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "los-troncos-fc-s-sanchez-drago.webp",
       "teamId": "los-troncos-fc"
     },
     {
@@ -171,7 +171,7 @@
       "rank": 4,
       "team": "Rayo de Barcelona",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "rayo-barcelona-pelaz.webp",
       "teamId": "rayo-barcelona"
     },
     {
@@ -181,11 +181,11 @@
       "rank": 5,
       "team": "Rayo de Barcelona",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "rayo-barcelona-guillem-zz.webp",
       "teamId": "rayo-barcelona"
     }
   ],
-  "topAssists": [
+  "topAssistant": [
     {
       "playerName": "Franky P.",
       "gamesPlayed": 2,
@@ -193,7 +193,7 @@
       "rank": 1,
       "team": "Rayo de Barcelona",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "rayo-barcelona-franky-p.webp",
       "teamId": "rayo-barcelona"
     },
     {
@@ -233,7 +233,7 @@
       "rank": 5,
       "team": "Porcinos FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg",
-      "playerImage": "placeholder.png",
+      "playerImage": "porcinos-fc-g-cichero.webp",
       "teamId": "porcinos-fc"
     }
   ]
