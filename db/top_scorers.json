@@ -1,129 +1,161 @@
 [
   {
     "playerName": "A. Bueno",
-    "gamesPlayed": 5,
-    "goals": 6,
+    "gamesPlayed": 6,
+    "goals": 8,
     "rank": 1,
     "team": "1K FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg"
   },
   {
-    "playerName": "Pelaz",
-    "gamesPlayed": 5,
-    "goals": 6,
+    "playerName": "Juanma Glez",
+    "gamesPlayed": 6,
+    "goals": 7,
     "rank": 2,
+    "team": "Ultimate Móstoles",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg"
+  },
+  {
+    "playerName": "Pelaz",
+    "gamesPlayed": 6,
+    "goals": 6,
+    "rank": 3,
     "team": "Rayo de Barcelona",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg"
   },
   {
-    "playerName": "Juanma Glez",
-    "gamesPlayed": 5,
+    "playerName": "C. Castro",
+    "gamesPlayed": 6,
     "goals": 6,
-    "rank": 3,
-    "team": "Ultimate Móstoles",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg"
-  },
-  {
-    "playerName": "Ubón",
-    "gamesPlayed": 5,
-    "goals": 5,
     "rank": 4,
-    "team": "El Barrio",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg"
-  },
-  {
-    "playerName": "Arché",
-    "gamesPlayed": 5,
-    "goals": 5,
-    "rank": 5,
-    "team": "Ultimate Móstoles",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg"
+    "team": "XBUYER TEAM",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/xbuyer.svg"
   },
   {
     "playerName": "F. Hernández",
     "gamesPlayed": 4,
-    "goals": 4,
-    "rank": 6,
+    "goals": 5,
+    "rank": 5,
     "team": "Aniquiladores FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg"
   },
   {
+    "playerName": "Ubón",
+    "gamesPlayed": 6,
+    "goals": 5,
+    "rank": 6,
+    "team": "El Barrio",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg"
+  },
+  {
     "playerName": "Jacobo",
-    "gamesPlayed": 5,
-    "goals": 4,
+    "gamesPlayed": 6,
+    "goals": 5,
     "rank": 7,
     "team": "El Barrio",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg"
   },
   {
-    "playerName": "Soriano",
-    "gamesPlayed": 5,
-    "goals": 4,
+    "playerName": "Coro",
+    "gamesPlayed": 6,
+    "goals": 5,
     "rank": 8,
-    "team": "Jijantes FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg"
+    "team": "Kunisports",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/kunisports.svg"
   },
   {
     "playerName": "E. Álvaro «Roble»",
-    "gamesPlayed": 5,
-    "goals": 4,
+    "gamesPlayed": 6,
+    "goals": 5,
     "rank": 9,
     "team": "Los Troncos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg"
   },
   {
-    "playerName": "J. Blanco",
+    "playerName": "H. Fraile",
     "gamesPlayed": 5,
-    "goals": 4,
+    "goals": 5,
     "rank": 10,
     "team": "Porcinos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
-    "playerName": "H. Fraile",
-    "gamesPlayed": 4,
-    "goals": 4,
+    "playerName": "R. Carbó",
+    "gamesPlayed": 6,
+    "goals": 5,
     "rank": 11,
-    "team": "Porcinos FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
+    "team": "Saiyans FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg"
+  },
+  {
+    "playerName": "Arché",
+    "gamesPlayed": 6,
+    "goals": 5,
+    "rank": 12,
+    "team": "Ultimate Móstoles",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg"
   },
   {
     "playerName": "Poch",
-    "gamesPlayed": 5,
-    "goals": 4,
-    "rank": 12,
-    "team": "XBUYER TEAM",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/xbuyer.svg"
-  },
-  {
-    "playerName": "C. Castro",
-    "gamesPlayed": 5,
-    "goals": 4,
+    "gamesPlayed": 6,
+    "goals": 5,
     "rank": 13,
     "team": "XBUYER TEAM",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/xbuyer.svg"
   },
   {
-    "playerName": "Rivero",
-    "gamesPlayed": 5,
-    "goals": 3,
+    "playerName": "Soriano",
+    "gamesPlayed": 6,
+    "goals": 4,
     "rank": 14,
+    "team": "Jijantes FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg"
+  },
+  {
+    "playerName": "Lopo",
+    "gamesPlayed": 6,
+    "goals": 4,
+    "rank": 15,
+    "team": "PIO FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio.svg"
+  },
+  {
+    "playerName": "G. Cichero",
+    "gamesPlayed": 6,
+    "goals": 4,
+    "rank": 16,
+    "team": "Porcinos FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
+  },
+  {
+    "playerName": "J. Blanco",
+    "gamesPlayed": 6,
+    "goals": 4,
+    "rank": 17,
+    "team": "Porcinos FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
+  },
+  {
+    "playerName": "Rivero",
+    "gamesPlayed": 6,
+    "goals": 3,
+    "rank": 18,
     "team": "1K FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg"
   },
   {
     "playerName": "Gilles V.",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 3,
-    "rank": 15,
+    "rank": 19,
     "team": "Aniquiladores FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg"
   },
   {
-    "playerName": "Coro",
-    "gamesPlayed": 5,
+    "playerName": "Torrentbó",
+    "gamesPlayed": 6,
     "goals": 3,
-    "rank": 16,
+    "rank": 20,
     "team": "Kunisports",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/kunisports.svg"
   },
@@ -131,63 +163,63 @@
     "playerName": "S. Sánchez «Drago»",
     "gamesPlayed": 2,
     "goals": 3,
-    "rank": 17,
+    "rank": 21,
     "team": "Los Troncos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg"
   },
   {
     "playerName": "X. Molas «Mimosa»",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 3,
-    "rank": 18,
+    "rank": 22,
     "team": "Los Troncos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg"
   },
   {
     "playerName": "J. Verdú «Gingko»",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 3,
-    "rank": 19,
+    "rank": 23,
     "team": "Los Troncos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg"
   },
   {
-    "playerName": "G. Cichero",
-    "gamesPlayed": 5,
-    "goals": 3,
-    "rank": 20,
-    "team": "Porcinos FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
-  },
-  {
     "playerName": "Guillem ZZ",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 3,
-    "rank": 21,
+    "rank": 24,
     "team": "Rayo de Barcelona",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg"
   },
   {
-    "playerName": "R. Carbó",
-    "gamesPlayed": 5,
+    "playerName": "Aleix",
+    "gamesPlayed": 6,
     "goals": 3,
-    "rank": 22,
-    "team": "Saiyans FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg"
+    "rank": 25,
+    "team": "Ultimate Móstoles",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg"
   },
   {
     "playerName": "Sorroche",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 2,
-    "rank": 23,
+    "rank": 26,
     "team": "1K FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg"
   },
   {
-    "playerName": "Bernat",
-    "gamesPlayed": 5,
+    "playerName": "Roger",
+    "gamesPlayed": 6,
     "goals": 2,
-    "rank": 24,
+    "rank": 27,
+    "team": "Aniquiladores FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg"
+  },
+  {
+    "playerName": "Bernat",
+    "gamesPlayed": 6,
+    "goals": 2,
+    "rank": 28,
     "team": "Aniquiladores FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg"
   },
@@ -195,7 +227,15 @@
     "playerName": "O. Boada",
     "gamesPlayed": 4,
     "goals": 2,
-    "rank": 25,
+    "rank": 29,
+    "team": "El Barrio",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg"
+  },
+  {
+    "playerName": "Ros",
+    "gamesPlayed": 6,
+    "goals": 2,
+    "rank": 30,
     "team": "El Barrio",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg"
   },
@@ -203,127 +243,127 @@
     "playerName": "Alsina",
     "gamesPlayed": 5,
     "goals": 2,
-    "rank": 26,
+    "rank": 31,
     "team": "Jijantes FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg"
   },
   {
-    "playerName": "Torrentbó",
-    "gamesPlayed": 5,
-    "goals": 2,
-    "rank": 27,
-    "team": "Kunisports",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/kunisports.svg"
-  },
-  {
     "playerName": "Carlitos",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 2,
-    "rank": 28,
-    "team": "PIO FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio.svg"
-  },
-  {
-    "playerName": "Lopo",
-    "gamesPlayed": 5,
-    "goals": 2,
-    "rank": 29,
+    "rank": 32,
     "team": "PIO FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio.svg"
   },
   {
     "playerName": "Pau Fer",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 2,
-    "rank": 30,
+    "rank": 33,
     "team": "PIO FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio.svg"
   },
   {
     "playerName": "Cokita",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 2,
-    "rank": 31,
+    "rank": 34,
     "team": "PIO FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio.svg"
+  },
+  {
+    "playerName": "Lao",
+    "gamesPlayed": 6,
+    "goals": 2,
+    "rank": 35,
+    "team": "Porcinos FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
     "playerName": "Espinosa",
     "gamesPlayed": 4,
     "goals": 2,
-    "rank": 32,
+    "rank": 36,
     "team": "Porcinos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
     "playerName": "Kilian",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 2,
-    "rank": 33,
+    "rank": 37,
     "team": "Porcinos FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/porcinos-fc.svg"
   },
   {
     "playerName": "D. Vilà",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 2,
-    "rank": 34,
+    "rank": 38,
+    "team": "Rayo de Barcelona",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg"
+  },
+  {
+    "playerName": "M. Reyes",
+    "gamesPlayed": 6,
+    "goals": 2,
+    "rank": 39,
     "team": "Rayo de Barcelona",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/rayo-barcelona.svg"
   },
   {
     "playerName": "Gio Ferinu",
-    "gamesPlayed": 3,
+    "gamesPlayed": 4,
     "goals": 2,
-    "rank": 35,
+    "rank": 40,
     "team": "Saiyans FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg"
   },
   {
     "playerName": "Feliu",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 2,
-    "rank": 36,
+    "rank": 41,
     "team": "Saiyans FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg"
   },
   {
-    "playerName": "Aleix",
-    "gamesPlayed": 5,
+    "playerName": "Corvo",
+    "gamesPlayed": 1,
     "goals": 2,
-    "rank": 37,
-    "team": "Ultimate Móstoles",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg"
+    "rank": 42,
+    "team": "PIO FC",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio.svg"
   },
   {
     "playerName": "Román",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 1,
-    "rank": 38,
+    "rank": 43,
     "team": "1K FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg"
   },
   {
     "playerName": "Sauras",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 1,
-    "rank": 39,
+    "rank": 44,
     "team": "1K FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg"
   },
   {
     "playerName": "Pluvins",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 1,
-    "rank": 40,
+    "rank": 45,
     "team": "1K FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg"
   },
   {
     "playerName": "Marino",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 1,
-    "rank": 41,
+    "rank": 46,
     "team": "1K FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/1k.svg"
   },
@@ -331,7 +371,7 @@
     "playerName": "Nadir",
     "gamesPlayed": 2,
     "goals": 1,
-    "rank": 42,
+    "rank": 47,
     "team": "Aniquiladores FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg"
   },
@@ -339,64 +379,24 @@
     "playerName": "Goku",
     "gamesPlayed": 1,
     "goals": 1,
-    "rank": 43,
-    "team": "Aniquiladores FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg"
-  },
-  {
-    "playerName": "Roger",
-    "gamesPlayed": 5,
-    "goals": 1,
-    "rank": 44,
+    "rank": 48,
     "team": "Aniquiladores FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg"
   },
   {
     "playerName": "Daniel P.",
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 1,
-    "rank": 45,
+    "rank": 49,
     "team": "Aniquiladores FC",
     "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg"
   },
   {
-    "playerName": "Ros",
-    "gamesPlayed": 5,
-    "goals": 1,
-    "rank": 46,
-    "team": "El Barrio",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg"
-  },
-  {
-    "playerName": "Ibai",
-    "gamesPlayed": 1,
-    "goals": 1,
-    "rank": 47,
-    "team": "Jijantes FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg"
-  },
-  {
-    "playerName": "Nando",
-    "gamesPlayed": 1,
-    "goals": 1,
-    "rank": 48,
-    "team": "Jijantes FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg"
-  },
-  {
-    "playerName": "Maca",
-    "gamesPlayed": 5,
-    "goals": 1,
-    "rank": 49,
-    "team": "Jijantes FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg"
-  },
-  {
-    "playerName": "Dorado",
-    "gamesPlayed": 5,
+    "playerName": "Beguer",
+    "gamesPlayed": 6,
     "goals": 1,
     "rank": 50,
-    "team": "Jijantes FC",
-    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg"
+    "team": "El Barrio",
+    "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg"
   }
 ]
