@@ -1,5 +1,19 @@
 [
   {
+    "role": "MauricioDelantero",
+    "firstName": "",
+    "lastName": "",
+    "image": "kunisports-Kunisports_96.webp",
+    "name": " ",
+    "id": "kunisports-Kunisports_96",
+    "team": {
+      "id": "kunisports",
+      "name": "Kunisports",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/kunisports.svg",
+      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/kunisports-inverse.svg"
+    }
+  },
+  {
     "role": "M.Delantero",
     "firstName": "",
     "lastName": "",
@@ -378,6 +392,34 @@
     }
   },
   {
+    "role": "DavidDelantero",
+    "firstName": "",
+    "lastName": "",
+    "image": "aniquiladores-fc-7.webp",
+    "name": " ",
+    "id": "aniquiladores-fc-7",
+    "team": {
+      "id": "aniquiladores-fc",
+      "name": "Aniquiladores FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg",
+      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores-inverse.svg"
+    }
+  },
+  {
+    "role": "IbaiDelantero",
+    "firstName": "",
+    "lastName": "",
+    "image": "jijantes-fc-11.webp",
+    "name": " ",
+    "id": "jijantes-fc-11",
+    "team": {
+      "id": "jijantes-fc",
+      "name": "Jijantes FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg",
+      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes-inverse.svg"
+    }
+  },
+  {
     "role": "VíctorMedio",
     "firstName": "",
     "lastName": "",
@@ -431,34 +473,6 @@
       "name": "XBUYER TEAM",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/xbuyer.svg",
       "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/xbuyer-inverse.svg"
-    }
-  },
-  {
-    "role": "DavidDelantero",
-    "firstName": "",
-    "lastName": "",
-    "image": "aniquiladores-fc-7.webp",
-    "name": " ",
-    "id": "aniquiladores-fc-7",
-    "team": {
-      "id": "aniquiladores-fc",
-      "name": "Aniquiladores FC",
-      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores.svg",
-      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/aniquiladores-inverse.svg"
-    }
-  },
-  {
-    "role": "IbaiDelantero",
-    "firstName": "",
-    "lastName": "",
-    "image": "jijantes-fc-11.webp",
-    "name": " ",
-    "id": "jijantes-fc-11",
-    "team": {
-      "id": "jijantes-fc",
-      "name": "Jijantes FC",
-      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg",
-      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes-inverse.svg"
     }
   },
   {
