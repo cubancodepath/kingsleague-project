@@ -378,48 +378,6 @@
     }
   },
   {
-    "role": "VíctorMedio",
-    "firstName": "",
-    "lastName": "",
-    "image": "los-troncos-fc-20.webp",
-    "name": " ",
-    "id": "los-troncos-fc-20",
-    "team": {
-      "id": "los-troncos-fc",
-      "name": "Los Troncos FC",
-      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
-      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos-inverse.svg"
-    }
-  },
-  {
-    "role": "JaviMedio",
-    "firstName": "",
-    "lastName": "",
-    "image": "pio-fc-5.webp",
-    "name": " ",
-    "id": "pio-fc-5",
-    "team": {
-      "id": "pio-fc",
-      "name": "PIO FC",
-      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio.svg",
-      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio-inverse.svg"
-    }
-  },
-  {
-    "role": "RubénMedio",
-    "firstName": "",
-    "lastName": "",
-    "image": "ultimate-mostoles-8.webp",
-    "name": " ",
-    "id": "ultimate-mostoles-8",
-    "team": {
-      "id": "ultimate-mostoles",
-      "name": "Ultimate Móstoles",
-      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg",
-      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles-inverse.svg"
-    }
-  },
-  {
     "role": "EnigmaMedio",
     "firstName": "",
     "lastName": "",
@@ -459,6 +417,48 @@
       "name": "Jijantes FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg",
       "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes-inverse.svg"
+    }
+  },
+  {
+    "role": "VíctorMedio",
+    "firstName": "",
+    "lastName": "",
+    "image": "los-troncos-fc-20.webp",
+    "name": " ",
+    "id": "los-troncos-fc-20",
+    "team": {
+      "id": "los-troncos-fc",
+      "name": "Los Troncos FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
+      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos-inverse.svg"
+    }
+  },
+  {
+    "role": "JaviMedio",
+    "firstName": "",
+    "lastName": "",
+    "image": "pio-fc-5.webp",
+    "name": " ",
+    "id": "pio-fc-5",
+    "team": {
+      "id": "pio-fc",
+      "name": "PIO FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio.svg",
+      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/pio-inverse.svg"
+    }
+  },
+  {
+    "role": "RubénMedio",
+    "firstName": "",
+    "lastName": "",
+    "image": "ultimate-mostoles-8.webp",
+    "name": " ",
+    "id": "ultimate-mostoles-8",
+    "team": {
+      "id": "ultimate-mostoles",
+      "name": "Ultimate Móstoles",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles.svg",
+      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/ultimate-mostoles-inverse.svg"
     }
   },
   {
