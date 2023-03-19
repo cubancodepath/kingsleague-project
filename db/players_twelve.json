@@ -378,6 +378,20 @@
     }
   },
   {
+    "role": "VíctorMedio",
+    "firstName": "",
+    "lastName": "",
+    "image": "los-troncos-fc-20.webp",
+    "name": " ",
+    "id": "los-troncos-fc-20",
+    "team": {
+      "id": "los-troncos-fc",
+      "name": "Los Troncos FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
+      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos-inverse.svg"
+    }
+  },
+  {
     "role": "JaviMedio",
     "firstName": "",
     "lastName": "",
@@ -445,20 +459,6 @@
       "name": "Jijantes FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes.svg",
       "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/jijantes-inverse.svg"
-    }
-  },
-  {
-    "role": "VíctorMedio",
-    "firstName": "",
-    "lastName": "",
-    "image": "los-troncos-fc-20.webp",
-    "name": " ",
-    "id": "los-troncos-fc-20",
-    "team": {
-      "id": "los-troncos-fc",
-      "name": "Los Troncos FC",
-      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
-      "imageWhite": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos-inverse.svg"
     }
   },
   {
