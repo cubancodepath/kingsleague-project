@@ -137,7 +137,7 @@
     {
       "playerName": "Ubón",
       "gamesPlayed": 12,
-      "goals": 15,
+      "goals": 17,
       "rank": 1,
       "team": "El Barrio",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/el-barrio.svg",
@@ -147,7 +147,7 @@
     {
       "playerName": "E. Álvaro",
       "gamesPlayed": 12,
-      "goals": 14,
+      "goals": 15,
       "rank": 2,
       "team": "Los Troncos FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
@@ -165,24 +165,24 @@
       "teamId": "1k"
     },
     {
-      "playerName": "J. Verdú",
-      "gamesPlayed": 10,
-      "goals": 11,
-      "rank": 4,
-      "team": "Los Troncos FC",
-      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
-      "playerImage": "placeholder.png",
-      "teamId": "los-troncos-fc"
-    },
-    {
       "playerName": "R. Carbó",
       "gamesPlayed": 12,
-      "goals": 11,
-      "rank": 5,
+      "goals": 13,
+      "rank": 4,
       "team": "Saiyans FC",
       "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/saiyans-fc.svg",
       "playerImage": "saiyans-fc-r-carbo.webp",
       "teamId": "saiyans-fc"
+    },
+    {
+      "playerName": "J. Verdú",
+      "gamesPlayed": 10,
+      "goals": 11,
+      "rank": 5,
+      "team": "Los Troncos FC",
+      "image": "https://api.kingsleague.bjvalmaseda.com/static/logos/los-troncos.svg",
+      "playerImage": "placeholder.png",
+      "teamId": "los-troncos-fc"
     }
   ],
   "topAssistant": [
